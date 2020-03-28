@@ -1,0 +1,16 @@
+{
+    "name": "zabiranik/todo-list",
+    "description": "Todo list app made with PHP OOP",
+    "authors": [
+        {
+            "name": "zabiranik",
+            "email": "zabiranik.me@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "./"
+        ]
+    }
+}
