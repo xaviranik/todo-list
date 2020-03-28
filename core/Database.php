@@ -21,12 +21,6 @@ class Database {
 
     public function runQuery($sql, $args = NULL)
     {
-        if (!$args) 
-        {
-            return $this->db->query($sql);
-        }
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($args);
-        return $stmt;
+        return $args == null ? $this->db->query($sql) : $this->db->prepare($sql)->execute($args);
     }
 }
