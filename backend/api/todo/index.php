@@ -1,6 +1,6 @@
 <?php
 
-require_once('../../bootstrap.php');
+require_once('../../../bootstrap.php');
 
 $todo = new Todo($db);
 $data = $todo->index();
