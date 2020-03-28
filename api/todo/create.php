@@ -1,6 +1,6 @@
 <?php
 
-require_once('../../index.php');
+require_once('../../bootstrap.php');
 header('Access-Control-Allow-Methods: POST');
 
 // Getting Request
