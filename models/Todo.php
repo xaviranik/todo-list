@@ -38,4 +38,12 @@ class Todo {
             'id' => $this->id
         ]);
     }
+
+    public function delete()
+    {
+        $sql = 'DELETE FROM ' . $this->table . ' WHERE id = :id';
+        return $this->db->runQuery($sql, [
+            'id' => $this->id
+        ]);
+    }
 }
