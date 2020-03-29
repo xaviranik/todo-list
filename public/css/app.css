@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e1e1e1 !important;
+}
+
+#app {
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin-top: 40px;
+  font-size: 24px;
+}
+
+.card {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card-inside:hover {
+  -webkit-box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.todo-input {
+  border: 0px;
+  width: 100%;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  background: transparent;
+}
+
+.todo-input:focus {
+  outline: 0;
+}
+
+.todo-item {
+  margin-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+}
+
+.remove-item {
+  cursor: pointer;
+  margin-left: 14px;
+}
+
+.remove-item:hover {
+  color: black;
+}
+
+.todo-item-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-item-label {
+  padding: 10px;
+  border: 1px solid white;
+  margin-left: 12px;
+}
+
+.todo-item-edit {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-left: 12px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.todo-item-edit:focus {
+  outline: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.extra-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid lightgrey;
+  padding-top: 14px;
+  margin-bottom: 14px;
+}
+
+button {
+  font-size: 0.75rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+
+button:hover {
+  background: #d4d4d4;
+}
+
+button:focus {
+  outline: none;
+}
+
+.active {
+  background: #2c3e50;
+  color: white;
+}
+
+.font-sm {
+  font-size: 0.9rem;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+/*# sourceMappingURL=app.css.map */
