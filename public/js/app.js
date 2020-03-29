@@ -123,9 +123,10 @@ var app = new Vue({
             })
         },
         clearCompleted() {
-            let completedTodos = this.todos.filter(todo => todo.completed)
-            completedTodos.forEach((todo) => {
-                this.deleteTodo(todo)
+            this.todos.filter(todo => todo.completed)
+            axios.delete('http://todo-list.test/backend/api/todo/delete-completed.php')
+            .catch((error) => {
+                console.log(error)
             })
 
         }

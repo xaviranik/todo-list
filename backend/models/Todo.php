@@ -46,4 +46,10 @@ class Todo {
             'id' => $this->id
         ]);
     }
+
+    public function deleteCompleted()
+    {
+        $sql = 'DELETE FROM ' . $this->table . ' WHERE completed = 1';
+        return $this->db->runQuery($sql);
+    }
 }
