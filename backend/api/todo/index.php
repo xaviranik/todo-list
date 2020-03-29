@@ -15,7 +15,7 @@ if ($data->rowCount() > 0)
         $todo_item = array(
             'id' => $id,
             'title' => $title,
-            'completed' => $completed,
+            'completed' => $completed ? true : false,
         );
 
         array_push($todo_array, $todo_item);
